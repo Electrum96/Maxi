@@ -8,7 +8,7 @@ const Header = ({icon, color, title, iconTwo}) => {
   return (
     <View style={styles.headerWrp}>
       <TouchableOpacity>
-        <FontAwesomeIcon icon={icon} color={color} />
+        <FontAwesomeIcon icon={icon} color={color}  />
       </TouchableOpacity>
 
       {title && <Text style={styles.title}>{title}</Text>}

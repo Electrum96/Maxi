@@ -3,10 +3,12 @@ import { COLORS } from '../../styles/variables';
 
 const styles = StyleSheet.create({
     headerWrp: {
-        backgroundColor: COLORS.red
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        margin: 10
     },
     title: {
-        color: COLORS.yellow
+        
     }
 });
 
