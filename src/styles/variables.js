@@ -3,7 +3,8 @@ const COLORS = {
     accentBg: "#1E243F",
     light: "#FFF",
     dark: "#000000",
-    red: "#ea3b64"
+    red: "#ea3b64",
+    yellow: "#F7CC30"
 }
 
 const RADIUS = {
