@@ -2,7 +2,7 @@ import {Text, View, Image} from 'react-native';
 
 import styles from './BookPlace.style';
 
-const BookPlace = () => {
+const BookPlace = ({navigation}) => {
 
     return <View>BookPlace</View>
 }

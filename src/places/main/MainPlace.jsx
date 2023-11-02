@@ -1,10 +1,17 @@
 import {Text, View, Image} from 'react-native';
 
-import styles from './MainPlace.style';
+import navigationButtons from '../../data/navigationButtons';
 
-const MainPlace = () => {
+import MainButtons from '../../components/mainButtons/MainButtons'
 
-    return <View>MainPlace</View>
+import styles from './MainPlace.style.js';
+
+const MainPlace = ({navigation}) => {
+
+    return <View style={styles.container}>
+        <Text>test</Text>
+        {/* {navigationButtons.map((item) => <MainButtons key={item.title} title={item.title}  onPress={() => navigation.push(item.route)}/>)} */}
+    </View>
 }
 
 export default MainPlace;

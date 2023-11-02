@@ -28,14 +28,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
-import MenuScreen from './src/screens/menu/MenuScreen';
-import BasketScreen from './src/screens/basket/BasketScreen';
-import BookingScreen from './src/screens/booking/BookingScreen';
-import CatalogScreen from './src/screens/catalog/CatalogScreen';
-import CommunicationsScreen from './src/screens/communications/CommunicationsScreen';
-import OrderScreen from './src/screens/order/OrderScreen';
-import ReserveScreen from './src/screens/reserve/ReserveScreen';
-import BroadcastsScreen from './src/screens/broadcasts/BroadcastsScreen';
+import BagPlace from './src/places/bag/BagPlace';
+import BookPlace from './src/places/book/BookPlace';
+import PlatePlace from './src/places/plate/PlatePlace';
+import InformationPlace from './src/places/information/InformationPlace';
+import EmptyBagPlace from './src/places/empty-bag/EmptyBagPlace';
+import BroningPlace from './src/places/broning/BroningPlace';
+import SportPlace from './src/places/sport/SportPlace';
+import MainPlace from './src/places/main/MainPlace'
 
 
 library.add(
@@ -67,48 +67,48 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Menu"
-          component={MenuScreen}
+          name="Main"
+          component={MainPlace}
           options={{headerShown: false}}
         />
 
         <Stack.Screen
-          name="Basket"
-          component={BasketScreen}
+          name="Bag"
+          component={BagPlace}
           options={{headerShown: false}}
         />
 
         <Stack.Screen
-          name="Booking"
-          component={BookingScreen}
+          name="Book"
+          component={BookPlace}
           options={{headerShown: false}}
         />
 
         <Stack.Screen
-          name="Catalog"
-          component={CatalogScreen}
+          name="Plate"
+          component={PlatePlace}
           options={{headerShown: false}}
         />
 
         <Stack.Screen
-          name="Communications"
-          component={CommunicationsScreen}
+          name="Information"
+          component={InformationPlace}
           options={{headerShown: false}}
         />
 
         <Stack.Screen
-          name="Order"
-          component={OrderScreen}
+          name="Empty"
+          component={EmptyBagPlace}
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Reserve"
-          component={ReserveScreen}
+          name="Broning"
+          component={BroningPlace}
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Broadcasts"
-          component={BroadcastsScreen}
+          name="Sport"
+          component={SportPlace}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

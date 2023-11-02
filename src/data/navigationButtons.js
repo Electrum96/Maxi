@@ -1,19 +1,19 @@
 const navigationButtons = [
   {
-    title: 'negozio',
-    route: 'Catalog',
+    title: 'магазин',
+    route: 'Main',
   },
   {
-    title: 'Prenotazione tavolo',
-    route: 'Booking',
+    title: 'бронь столика',
+    route: 'Book',
   },
   {
-    title: 'Traduzioni',
-    route: 'Broadcasts',
+    title: 'трансляции',
+    route: 'Sport',
   },
   {
-    title: 'Contatti',
-    route: 'Communications',
+    title: 'контакты',
+    route: 'Information',
   }
 ];
 
