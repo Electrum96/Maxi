@@ -6,12 +6,15 @@ import styles from './PlateList.style';
 import PlateItem from '../plate-item/PlateItem';
 
 const PlateList = () => {
-
-    return <View style={styles.container}>
-        <ScrollView  horizontal={true}>
-        {products.map((product) => <PlateItem key={product.id} {...product}/>) }
-        </ScrollView>
+  return (
+    <View style={styles.container}>
+      <ScrollView horizontal={true}>
+        {products.map(product => (
+          <PlateItem key={product.id} {...product} />
+        ))}
+      </ScrollView>
     </View>
-}
+  );
+};
 
 export default PlateList;

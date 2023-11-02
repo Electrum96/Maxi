@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.light,
         height: 300,
         width: 200,
+        marginHorizontal: 20,
         borderRadius: RADIUS.big
     },
     img: {
