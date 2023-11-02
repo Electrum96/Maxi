@@ -12,7 +12,7 @@ const BookPlace = ({navigation}) => {
       );
   return (
     <View style={styles.bookWrap}>
-    <Header {...headerData}/>
+    <Header {...headerData} navigation={navigation}/>
     <Text style={styles.title}>Delicious food for you</Text>
     <PlateList/>
     </View>
