@@ -8,13 +8,13 @@ const Header = ({icon, color, title, iconTwo}) => {
   return (
     <View style={styles.headerWrp}>
       <TouchableOpacity>
-        <FontAwesomeIcon icon={icon} color={color}  />
+        <FontAwesomeIcon icon={icon} color={color} size={25} />
       </TouchableOpacity>
 
       {title && <Text style={styles.title}>{title}</Text>}
 
       <TouchableOpacity>
-        {iconTwo && <FontAwesomeIcon icon={iconTwo} color={color} />}
+        {iconTwo && <FontAwesomeIcon icon={iconTwo} color={color} size={25} />}
       </TouchableOpacity>
     </View>
   );

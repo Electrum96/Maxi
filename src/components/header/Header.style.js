@@ -7,9 +7,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10
     },
-    title: {
-        
-    }
 });
 
 export default styles;

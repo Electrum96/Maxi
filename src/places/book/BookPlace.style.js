@@ -7,6 +7,13 @@ const styles = StyleSheet.create({
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
         backgroundColor: COLORS.accentBg,
+    },
+    title : {
+        color: COLORS.yellow,
+        fontWeight: '700',
+        width: 200,
+        fontSize: 30
+     
     }
     
 });
