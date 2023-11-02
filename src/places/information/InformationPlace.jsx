@@ -4,7 +4,7 @@ import styles from './InformationPlace.style';
 
 const InformationPlace = ({navigation}) => {
 
-    return <View>InformationPlace</View>
+    return <Text>InformationPlace</Text>
 }
 
 export default InformationPlace;

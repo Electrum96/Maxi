@@ -4,7 +4,7 @@ import styles from './SportPlace.style';
 
 const SportPlace = () => {
 
-    return <View>SportPlace</View>
+    return <Text>SportPlace</Text>
 }
 
 export default SportPlace;

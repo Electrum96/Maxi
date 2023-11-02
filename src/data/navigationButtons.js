@@ -1,11 +1,11 @@
 const navigationButtons = [
   {
     title: 'магазин',
-    route: 'Main',
+    route: 'Book',
   },
   {
     title: 'бронь столика',
-    route: 'Book',
+    route: 'Broning',
   },
   {
     title: 'трансляции',

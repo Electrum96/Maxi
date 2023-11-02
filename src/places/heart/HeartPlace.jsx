@@ -4,7 +4,7 @@ import styles from './HeartPlace.style';
 
 const HeartPlace = () => {
 
-    return <View>HeartPlace</View>
+    return <Text>HeartPlace</Text>
 }
 
 export default HeartPlace;

@@ -4,7 +4,7 @@ import styles from './BagPlace.style';
 
 const BagPlace = ({navigation}) => {
 
-    return <View>BagPlace</View>
+    return <Text>BagPlace</Text>
 }
 
 export default BagPlace;

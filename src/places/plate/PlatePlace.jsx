@@ -4,7 +4,7 @@ import styles from './PlatePlace.style';
 
 const PlatePlace = () => {
 
-    return <View>PlatePlace</View>
+    return <Text>PlatePlace</Text>
 }
 
 export default PlatePlace;

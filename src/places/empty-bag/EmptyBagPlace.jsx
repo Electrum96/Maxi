@@ -4,7 +4,7 @@ import styles from './EmptyBagPlace.style';
 
 const EmptyBagPlace = () => {
 
-    return <View>EmptyBagPlace</View>
+    return <Text>EmptyBagPlace</Text>
 }
 
 export default EmptyBagPlace;
