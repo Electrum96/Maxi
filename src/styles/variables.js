@@ -1,12 +1,13 @@
 const COLORS = {
-    accent: "#48b675",
-    accentBg: "#ccffd4",
+    accent: "#f4ca30",
+    accentBg: "#1e243f",
     light: "#FFF",
-    dark: "#000000"
+    dark: "#000000",
+    red: "#ea3b64"
 }
 
 const RADIUS = {
-    small: 15,
+    little: 15,
     big: 20
 }
 
