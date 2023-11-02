@@ -1,6 +1,6 @@
 const COLORS = {
     accent: "#f4ca30",
-    accentBg: "#1e243f",
+    accentBg: "#1E243F",
     light: "#FFF",
     dark: "#000000",
     red: "#ea3b64"

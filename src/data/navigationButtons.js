@@ -1,19 +1,23 @@
 const navigationButtons = [
   {
-    title: 'магазин',
+    title: 'Магазин',
     route: 'Book',
+    img: require('../images/logo/basket.png')
   },
   {
-    title: 'бронь столика',
+    title: 'Бронь столика',
     route: 'Broning',
+    img: require('../images/logo/bron.png')
   },
   {
-    title: 'трансляции',
+    title: 'Трансляции',
     route: 'Sport',
+    img: require('../images/logo/translation.png')
   },
   {
-    title: 'контакты',
+    title: 'Контакты',
     route: 'Information',
+    img: require('../images/logo/contact.png')
   }
 ];
 
