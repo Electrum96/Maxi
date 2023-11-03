@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         height: Dimensions.get('window').height,
         justifyContent: 'center',
         backgroundColor: COLORS.accentBg,
-        paddingBottom: 25,
+        paddingBottom: 24,
     },
 
     content : {
