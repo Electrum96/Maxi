@@ -14,7 +14,7 @@ const BookPlace = ({navigation}) => {
   return (
     <Layout navigation={navigation} headerData={headerData} background={COLORS.accentBg}>
       <Text style={styles.title}>Delicious food for you</Text>
-      <PlateList />
+      <PlateList navigation={navigation}/>
     </Layout>
   );
 };
