@@ -9,9 +9,11 @@ const PlateList = () => {
   return (
     <View style={styles.container}>
       <ScrollView horizontal={true}>
+        <View style={styles.wrapper}>
         {products.map(product => (
           <PlateItem key={product.id} {...product} />
         ))}
+        </View>
       </ScrollView>
     </View>
   );

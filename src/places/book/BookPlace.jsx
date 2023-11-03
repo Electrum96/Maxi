@@ -16,9 +16,6 @@ const BookPlace = ({navigation}) => {
       <Text style={styles.title}>Delicious food for you</Text>
       <PlateList />
     </Layout>
-    // <View style={styles.bookWrap}>
-
-    // </View>
   );
 };
 
