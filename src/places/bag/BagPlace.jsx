@@ -11,6 +11,8 @@ const BagPlace = ({navigation}) => {
   const headerData = headers.find(
     headerItem => headerItem.classHeader === 'bag',
   );
+ 
+  
   return (
     <Layout
       navigation={navigation}
@@ -20,7 +22,7 @@ const BagPlace = ({navigation}) => {
         <ScrollView style={styles.scroll}>
           <BagList />
         </ScrollView>
-        <LongButton />
+        <LongButton onPress={() => navigation.push('Empty')}/>
       </View>
     </Layout>
   );

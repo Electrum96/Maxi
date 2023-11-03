@@ -1,7 +1,7 @@
 let products = [
   {
     title: 'Torta di formaggio',
-    desc: '',
+    desc: 'массв массив',
     price: 62,
     image: require('../images/Bisq/Cheesy.png'),
     weight: 120,

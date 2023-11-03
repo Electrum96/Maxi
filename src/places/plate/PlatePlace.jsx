@@ -2,22 +2,42 @@ import {Text, View, Image} from 'react-native';
 
 import styles from './PlatePlace.style';
 
+import headers from '../../data/headers';
 import products from '../../data/products';
-const PlatePlace = ({route}) => {
+
+import Layout from '../../components/layout/Layout';
+import LongButton from '../../components/long-button/LongButton';
+
+const PlatePlace = ({route, navigation}) => {
   const {id} = route.params;
-  const {title, price, infoTitle, desc, image, infoHeader, descTwo} =
+  const {title, price, infoTitle, desc, image} =
     products.find(product => product.id === id);
 
+  const headerData = headers.find(
+    headerItem => headerItem.classHeader === 'plate',
+  );
+
+
   return (
-    <View>
-      <Image source={image}></Image>
-      <Text>{title}</Text>
-      <Text>{price}</Text>
-      <Text>{infoTitle}</Text>
-      <Text>{desc}</Text>
-      <Text>{infoHeader}</Text>
-      <Text>{descTwo}</Text>
-    </View>
+    <Layout navigation={navigation} headerData={headerData}>
+      <View style={styles.wrapper}>
+        <View>
+          <Image style={styles.image} source={image}></Image>
+        </View>
+
+        <View>
+          <Text style={styles.title}>{title}</Text>
+          <Text>{`$ ${price}`}</Text>
+        </View>
+
+        <View>
+          <Text>{infoTitle}</Text>
+          <Text>{desc}</Text>
+        </View>
+
+        <LongButton navigation={navigation} title={'Add to cart'} />
+      </View>
+    </Layout>
   );
 };
 
