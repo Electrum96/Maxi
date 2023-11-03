@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
         color: COLORS.yellow,
         fontWeight: '700',
         width: 200,
-        fontSize: 30
+        fontSize: 30,
+        marginBottom: 20
      
     }
     

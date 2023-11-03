@@ -10,7 +10,7 @@ const Header = ({icon, color, title, iconTwo, navigation}) => {
   const goBack = () => navigation.goBack()
   return (
     <View style={styles.headerWrp}>
-      <TouchableOpacity onPress={goBack}>
+      <TouchableOpacity onPress={goBack} style={styles.goBack}>
         <FontAwesomeIcon icon={icon} color={color} size={25} />
       </TouchableOpacity>
 
