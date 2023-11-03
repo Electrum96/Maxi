@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row',
     },
+    title: {
+        fontSize: 17,
+        fontWeight: '700'
+    }
 });
 
 export default styles;

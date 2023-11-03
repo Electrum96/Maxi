@@ -12,7 +12,7 @@ const BagItem = ({image, title, price}) => {
 
       <View style={styles.informWrap}>
         <Text style={styles.title}>{title}</Text>
-        <Text>{price}</Text>
+        <Text>{`${price} $`}</Text>
       </View>
 
       <View style={styles.btnWrap}>
