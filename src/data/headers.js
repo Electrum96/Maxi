@@ -21,7 +21,7 @@ const headers = [
     icon: 'arrow-left',
     title: 'Table reservation',
     iconTwo: false,
-    classHeaderHeader: 'broning',
+    classHeader: 'broning',
     color: COLORS.yellow,
    
 

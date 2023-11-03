@@ -14,7 +14,7 @@ const Header = ({icon, color, title, iconTwo, navigation}) => {
         <FontAwesomeIcon icon={icon} color={color} size={25} />
       </TouchableOpacity>
 
-      {title && <Text style={styles.title}>{title}</Text>}
+      {title && <Text  style={{...styles.title, color: color}}>{title}</Text>}
 
       <TouchableOpacity onPress={goBag}>
         {iconTwo && <FontAwesomeIcon icon={iconTwo} color={color} size={25} />}

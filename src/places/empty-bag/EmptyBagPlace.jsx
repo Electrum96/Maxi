@@ -21,7 +21,7 @@ const EmptyBagPlace = ({navigation}) => {
         </View>
         
         <LongButton
-          onPress={() => navigation.push('Main')}
+          onPress={() => navigation.push('Book')}
           title={'Start odering'}
         />
       </View>
