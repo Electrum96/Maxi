@@ -4,11 +4,13 @@ import styles from './PlatePlace.style';
 
 import headers from '../../data/headers';
 import products from '../../data/products';
+import product from '../../mobx/product';
 
 import Layout from '../../components/layout/Layout';
 import LongButton from '../../components/long-button/LongButton';
 
 const PlatePlace = ({route, navigation}) => {
+  const {addProduct} = product;
   const {id} = route.params;
   const {title, price, infoTitle, desc, image} =
     products.find(product => product.id === id);
@@ -35,7 +37,7 @@ const PlatePlace = ({route, navigation}) => {
           <Text>{desc}</Text>
         </View>
 
-        <LongButton navigation={navigation} title={'Add to cart'} />
+        <LongButton onPress={() => addProduct(id)} navigation={navigation} title={'Add to cart'} />
       </View>
     </Layout>
   );
