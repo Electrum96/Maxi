@@ -6,19 +6,33 @@ import headers from '../../data/headers';
 import products from '../../data/products';
 import product from '../../mobx/product';
 
+import {observer} from 'mobx-react-lite';
+
 import Layout from '../../components/layout/Layout';
 import LongButton from '../../components/long-button/LongButton';
+import {useState} from 'react';
 
 const PlatePlace = ({route, navigation}) => {
-  const {addProduct} = product;
   const {id} = route.params;
-  const {title, price, infoTitle, desc, image} =
-    products.find(product => product.id === id);
+  const {addProduct, removeProduct, isProductBasket} = product;
+  const [isAdded, setAdded] = useState(isProductBasket(id));
+  const {title, price, infoTitle, desc, image, added} = products.find(
+    product => product.id === id,
+  );
+
+  const handlerAdd = () => {
+    addProduct(id);
+    setAdded(!isAdded);
+  };
+
+  const handlerRemove = () => {
+    removeProduct(id);
+    setAdded(!isAdded);
+  };
 
   const headerData = headers.find(
     headerItem => headerItem.classHeader === 'plate',
   );
-
 
   return (
     <Layout navigation={navigation} headerData={headerData}>
@@ -37,10 +51,14 @@ const PlatePlace = ({route, navigation}) => {
           <Text>{desc}</Text>
         </View>
 
-        <LongButton onPress={() => addProduct(id)} navigation={navigation} title={'Add to cart'} />
+        <LongButton
+          onPress={isAdded ? handlerRemove : handlerAdd}
+          navigation={navigation}
+          title={isAdded ? 'Remove to cart' : 'Add to cart'}
+        />
       </View>
     </Layout>
   );
 };
 
-export default PlatePlace;
+export default observer(PlatePlace);

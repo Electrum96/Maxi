@@ -44,6 +44,10 @@ class Product {
     }
   }
 
+  isProductBasket = (id) => {
+    return this.basketList.find(el => el.id === id) ? true : false
+  }
+
   removeProduct = (id) => {
     const product = this.basketList.find(el => el.id === id);
 
