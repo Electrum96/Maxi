@@ -36,6 +36,7 @@ import EmptyBagPlace from './src/places/empty-bag/EmptyBagPlace';
 import BroningPlace from './src/places/broning/BroningPlace';
 import SportPlace from './src/places/sport/SportPlace';
 import MainPlace from './src/places/main/MainPlace'
+import HeartPlace from './src/places/heart/HeartPlace';
 
 
 library.add(
@@ -104,6 +105,11 @@ function App() {
         <Stack.Screen
           name="Broning"
           component={BroningPlace}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Heart"
+          component={HeartPlace}
           options={{headerShown: false}}
         />
         <Stack.Screen

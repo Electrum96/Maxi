@@ -45,7 +45,7 @@ const BroningPlace = ({navigation}) => {
             placeholder="Number"
           />
         </View>
-        <LongButton style={styles.btn} title={'Next'} />
+        <LongButton style={styles.btn} title={'Next'} onPress={() => navigation.push('Heart')}/>
       </View>
     </Layout>
   );
