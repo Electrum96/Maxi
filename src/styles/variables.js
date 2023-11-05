@@ -5,7 +5,8 @@ const COLORS = {
     light: "#FFF",
     dark: "#000000",
     red: "#ea3b64",
-    yellow: "#F7CC30"
+    yellow: "#F7CC30",
+    grey: "#787c8c"
 }
 
 const RADIUS = {

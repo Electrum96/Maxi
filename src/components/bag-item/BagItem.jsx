@@ -5,6 +5,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import styles from './BagItem.style';
 import {COLORS} from '../../styles/variables';
 
+import Counter from '../counter/Counter';
+
 const BagItem = ({image, title, price}) => {
   return (
     <View style={styles.itemWrap}>
@@ -19,9 +21,7 @@ const BagItem = ({image, title, price}) => {
         <TouchableOpacity>
           <FontAwesomeIcon icon={'trash'} color={COLORS.red} />
         </TouchableOpacity>
-        <TouchableOpacity>
-          <FontAwesomeIcon icon={'trash'} />
-        </TouchableOpacity>
+        <Counter />
       </View>
     </View>
   );

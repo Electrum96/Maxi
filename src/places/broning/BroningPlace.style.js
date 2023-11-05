@@ -11,16 +11,17 @@ const styles = StyleSheet.create({
 
     inputsWrap: {
         justifyContent: 'center',
-        backgroundColor: 'yellow',
+        marginTop: 40,
         gap: 20,
         width: 300,
     },
 
     input: {
-        color: COLORS.light,
         marginHorizontal: 20,
-        borderBottomWidth: 0.5,
-        height: 50,
+        borderBottomWidth: 1,
+        padding: 10,
+        height: 60,
+        borderColor: COLORS.light
        
     },
    
