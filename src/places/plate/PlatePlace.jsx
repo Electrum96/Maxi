@@ -6,8 +6,6 @@ import headers from '../../data/headers';
 import products from '../../data/products';
 import product from '../../mobx/product';
 
-import {observer} from 'mobx-react-lite';
-
 import Layout from '../../components/layout/Layout';
 import LongButton from '../../components/long-button/LongButton';
 import {useState} from 'react';
@@ -16,7 +14,7 @@ const PlatePlace = ({route, navigation}) => {
   const {id} = route.params;
   const {addProduct, removeProduct, isProductBasket} = product;
   const [isAdded, setAdded] = useState(isProductBasket(id));
-  const {title, price, infoTitle, desc, image, added} = products.find(
+  const {title, price, infoTitle, desc, image} = products.find(
     product => product.id === id,
   );
 
@@ -61,4 +59,4 @@ const PlatePlace = ({route, navigation}) => {
   );
 };
 
-export default observer(PlatePlace);
+export default PlatePlace;
