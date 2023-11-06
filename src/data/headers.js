@@ -6,6 +6,7 @@ const headers = [
     title: '',
     iconTwo: 'shopping-cart',
     classHeader: 'book',
+    route: 'Main',
     color: COLORS.yellow,
     
   },
@@ -14,6 +15,7 @@ const headers = [
     title: 'Cart',
     iconTwo: false,
     classHeader: 'bag',
+    route: 'Book',
     color: COLORS.dark,
   
   },
@@ -22,6 +24,7 @@ const headers = [
     title: 'Table reservation',
     iconTwo: false,
     classHeader: 'broning',
+    route: 'Main',
     color: COLORS.yellow,
    
 
@@ -31,6 +34,7 @@ const headers = [
     title: 'Sport broadcasts',
     iconTwo: false,
     classHeader: 'sport',
+    route: 'Main',
     color: COLORS.yellow,
   
   },
@@ -39,6 +43,7 @@ const headers = [
     title: 'Contacts',
     iconTwo: false,
     classHeader: 'information',
+    route: 'Main',
     color: COLORS.yellow,
    
   },
@@ -47,6 +52,7 @@ const headers = [
     title: 'Table reservation',
     iconTwo: false,
     classHeader: 'heart',
+    route: 'Broning',
     color: COLORS.dark,
    
   },
@@ -55,6 +61,7 @@ const headers = [
     title: 'Orders',
     iconTwo: false,
     classHeader: 'empty-bag',
+    route: 'Main',
     color: COLORS.dark,
     
   },
@@ -63,6 +70,7 @@ const headers = [
     title: '',
     iconTwo: false,
     classHeader: 'plate',
+    route: 'Book',
     color: COLORS.dark,
     
   },
