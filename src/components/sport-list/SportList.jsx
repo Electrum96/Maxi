@@ -8,11 +8,13 @@ import SportItem from '../sport-item/SportItem';
 const SportList = () => {
   return (
     <ScrollView>
-    <View style={styles.list}>
-      {translation.map(item => (
-        <SportItem key={item.id} {...item} />
-      ))}
-    </View>
+      <View style={styles.list}>
+        {translation
+          .filter(i => i.date >= new Date().getDate())
+          .map(item => (
+            <SportItem key={item.id} {...item} />
+          ))}
+      </View>
     </ScrollView>
   );
 };
