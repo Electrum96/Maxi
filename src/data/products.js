@@ -155,7 +155,7 @@ let products = [
     title: 'Семейный очаг',
     desc: 'Сытный мясной суп с говядиной, курицей, свининой и овощами. Заботливо согревает и обволакивает',
     price: 579,
-    image: require('../images/Hot/Soup.png'),
+    image: require('../images/Hot/Mushroom.png'),
     weight: 220,
     classTab: 'Hot',
   },

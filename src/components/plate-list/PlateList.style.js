@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
   },
   wrapper: {
     flexWrap: 'wrap',
-    gap: 20
+    gap: 20,
+    paddingRight: 30
   }
 });
 

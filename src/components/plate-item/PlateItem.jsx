@@ -13,7 +13,7 @@ const PlateItem = ({title, image, price,id, navigation}) => {
         </View>
         <View style={styles.content}>
           <Text style={styles.title}>{title}</Text>
-          <Text style={styles.price}>{`$ ${price}`}</Text>
+          <Text style={styles.price}>{` ₽ ${price}`}</Text>
         </View>
       </View>
     </TouchableOpacity>
