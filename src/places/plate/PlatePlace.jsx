@@ -14,7 +14,7 @@ const PlatePlace = ({route, navigation}) => {
   const {id} = route.params;
   const {addProduct, removeProduct, isProductBasket} = product;
   const [isAdded, setAdded] = useState(isProductBasket(id));
-  const {title, price, infoTitle, desc, image} = products.find(
+  const {title, price, desc, image} = products.find(
     product => product.id === id,
   );
 
@@ -39,20 +39,31 @@ const PlatePlace = ({route, navigation}) => {
           <Image style={styles.image} source={image}></Image>
         </View>
 
-        <View>
-          <Text style={styles.title}>{title}</Text>
-          <Text>{`$ ${price}`}</Text>
+        <View style={styles.wrap}>
+          <View style={styles.main}>
+            <Text style={styles.title}>{title}</Text>
+            <Text style={styles.price}>{`₽ ${price}`}</Text>
+          </View>
+
+          <View style={styles.titleDescBox}>
+            <Text style={styles.titleDescText}>Описание</Text>
+            <Text>{desc}</Text>
+          </View>
+
+          <View style={styles.titleDescBox}>
+            <Text style={styles.titleDescText}>Доставка</Text>
+            <Text>
+              Доставлено в период с понедельника по четверг с 8:00 до 19:32
+            </Text>
+          </View>
         </View>
 
-        <View>
-          <Text>{infoTitle}</Text>
-          <Text>{desc}</Text>
-        </View>
+        <View style={styles.container}></View>
 
         <LongButton
           onPress={isAdded ? handlerRemove : handlerAdd}
           navigation={navigation}
-          title={isAdded ? 'Remove to cart' : 'Add to cart'}
+          title={isAdded ? 'Удалить из корзины' : 'Добавить в корзину'}
         />
       </View>
     </Layout>
