@@ -10,12 +10,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         width: 300,
         height: 100,
-        padding: 20
+        padding: 8
        
     },
     image: {
         width: 100,
-        height: 50,
+        height: 60,
     },
     informWrap: {
         width: 100,
@@ -23,8 +23,13 @@ const styles = StyleSheet.create({
     },
     title: {
         fontWeight: '700',
-        fontSize: 15
+        fontSize: 15,
+        color: COLORS.dark
 
+    },
+    price: {
+    color: COLORS.red,
+    fontWeight: '700'
     },
     btnWrap:{
         flex: 1,

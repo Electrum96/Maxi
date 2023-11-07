@@ -15,7 +15,7 @@ const BagItem = ({image, title, price, id, count, increment, decrement,  remove}
 
       <View style={styles.informWrap}>
         <Text style={styles.title}>{title}</Text>
-        <Text>{`${price * count}  $`}</Text>
+        <Text style={styles.price}>{`${price * count}  ₽`}</Text>
       </View>
 
       <View style={styles.btnWrap}>
