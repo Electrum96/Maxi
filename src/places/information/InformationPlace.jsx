@@ -15,7 +15,7 @@ const InformationPlace = ({navigation}) => {
     <Layout headerData={headerData} navigation={navigation} background={COLORS.accentBg}>
       <View style={styles.wrapper}> 
         <ContactItem/>
-        <LongButton title={'Start odering'} onPress={() => navigation.push('Book')}/>
+        <LongButton title={'Начать заказ'} onPress={() => navigation.push('Book')}/>
       </View>
     </Layout>
   );

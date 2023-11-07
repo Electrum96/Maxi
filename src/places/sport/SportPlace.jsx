@@ -20,7 +20,7 @@ const SportPlace = ({navigation}) => {
         <View style={styles.list}>
           <SportList />
         </View>
-        <LongButton title={'Next'} onPress={() => navigation.push('Main')} />
+        <LongButton title={'Дальше'} onPress={() => navigation.push('Main')} />
       </View>
     </Layout>
   );

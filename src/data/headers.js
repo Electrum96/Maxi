@@ -21,7 +21,7 @@ const headers = [
   },
   {
     icon: 'arrow-left',
-    title: 'Table reservation',
+    title: 'Бронирование столика',
     iconTwo: false,
     classHeader: 'broning',
     route: 'Main',
@@ -31,7 +31,7 @@ const headers = [
   },
   {
     icon: 'arrow-left',
-    title: 'Sport broadcasts',
+    title: 'Спортивные трансляции',
     iconTwo: false,
     classHeader: 'sport',
     route: 'Main',
@@ -40,7 +40,7 @@ const headers = [
   },
   {
     icon: 'arrow-left',
-    title: 'Contacts',
+    title: 'Контакты',
     iconTwo: false,
     classHeader: 'information',
     route: 'Main',
@@ -49,7 +49,7 @@ const headers = [
   },
   {
     icon: 'arrow-left',
-    title: 'Table reservation',
+    title: 'Бронирование столика',
     iconTwo: false,
     classHeader: 'heart',
     route: 'Broning',

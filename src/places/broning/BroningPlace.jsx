@@ -22,30 +22,30 @@ const BroningPlace = ({navigation}) => {
           <TextInput
             style={styles.input}
             placeholderTextColor={COLORS.grey}
-            placeholder="Email address"
+            placeholder="Email адрес"
           />
           <TextInput
             style={styles.input}
             placeholderTextColor={COLORS.grey}
-            placeholder="Phone number"
+            placeholder="Номер телефона"
           />
           <TextInput
             style={styles.input}
             placeholderTextColor={COLORS.grey}
-            placeholder="First Name"
+            placeholder="Имя"
           />
           <TextInput
             style={styles.input}
             placeholderTextColor={COLORS.grey}
-            placeholder="Last Name"
+            placeholder="Фамилия"
           />
           <TextInput
             style={styles.input}
             placeholderTextColor={COLORS.grey}
-            placeholder="Number"
+            placeholder="Номер"
           />
         </View>
-        <LongButton style={styles.btn} title={'Next'} onPress={() => navigation.push('Heart')}/>
+        <LongButton style={styles.btn} title={'Дальше'} onPress={() => navigation.push('Heart')}/>
       </View>
     </Layout>
   );

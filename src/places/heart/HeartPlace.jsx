@@ -22,10 +22,10 @@ const HeartPlace = ({navigation}) => {
             style={styles.code}
             source={require('../../images/logo/QrCode.png')}
           />
-          <Text style={styles.title}>Thank you for the reserve</Text>
+          <Text style={styles.title}>Спасибо за ваше бронирование</Text>
         </View>
 
-        <LongButton onPress={() => navigation.push('Main')} title={'GO MAIN'} />
+        <LongButton onPress={() => navigation.push('Main')} title={'На главную'} />
       </View>
     </Layout>
   );
