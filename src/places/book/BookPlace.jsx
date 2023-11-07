@@ -13,7 +13,7 @@ const BookPlace = ({navigation}) => {
   );
   return (
     <Layout navigation={navigation} headerData={headerData} background={COLORS.accentBg}>
-      <Text style={styles.title}>Delicious food for you</Text>
+      <Text style={styles.title}>Вкусная еда для вас</Text>
       <PlateList navigation={navigation}/>
     </Layout>
   );

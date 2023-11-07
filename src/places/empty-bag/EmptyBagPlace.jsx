@@ -16,13 +16,13 @@ const EmptyBagPlace = ({navigation}) => {
     <Layout navigation={navigation} headerData={headerData}>
       <View style={styles.container}>
         <View style={styles.contentWrapper}>
-          <Text style={styles.title}> No orders yet</Text>
-          <Text style={styles.desc}>Hit the orange button down below to Create an order</Text>
+          <Text style={styles.title}>Пока что тут нет заказов</Text>
+          <Text style={styles.desc}>Нажмите оранжевую кнопку внизу, чтобы создать заказ</Text>
         </View>
         
         <LongButton
           onPress={() => navigation.push('Book')}
-          title={'Start odering'}
+          title={'Начать заказывать'}
         />
       </View>
     </Layout>

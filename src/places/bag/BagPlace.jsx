@@ -31,7 +31,7 @@ const BagPlace = ({navigation}) => {
         <ScrollView style={styles.scroll}>
           <BagList />
         </ScrollView>
-        <LongButton title={'Complete order'} onPress={handler}/>
+        <LongButton title={'Сделать заказ'} onPress={handler}/>
       </View>
     </Layout>
   );

@@ -12,7 +12,7 @@ const headers = [
   },
   {
     icon: 'arrow-left',
-    title: 'Cart',
+    title: 'Корзина',
     iconTwo: false,
     classHeader: 'bag',
     route: 'Book',
@@ -58,7 +58,7 @@ const headers = [
   },
   {
     icon: 'arrow-left',
-    title: 'Orders',
+    title: 'Заказы',
     iconTwo: false,
     classHeader: 'empty-bag',
     route: 'Main',
