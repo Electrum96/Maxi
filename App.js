@@ -37,6 +37,7 @@ import BroningPlace from './src/places/broning/BroningPlace';
 import SportPlace from './src/places/sport/SportPlace';
 import MainPlace from './src/places/main/MainPlace'
 import HeartPlace from './src/places/heart/HeartPlace';
+import EventPlace from './src/places/event/EventPlace';
 
 
 library.add(
@@ -115,6 +116,11 @@ function App() {
         <Stack.Screen
           name="Sport"
           component={SportPlace}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="Event"
+          component={EventPlace}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

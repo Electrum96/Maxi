@@ -18,6 +18,11 @@ const navigationButtons = [
     title: 'Контакты',
     route: 'Information',
     img: require('../images/logo/contact.png')
+  },
+  {
+    title: 'События',
+    route: 'Event',
+    img: require('../images/logo/contact.png')
   }
 ];
 

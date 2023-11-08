@@ -74,6 +74,15 @@ const headers = [
     color: COLORS.dark,
     
   },
+  {
+    icon: 'arrow-left',
+    title: 'События ресторана',
+    iconTwo: false,
+    classHeader: 'event',
+    route: 'Book',
+    color: COLORS.yellow,
+    
+  },
 ];
 
 export default headers;
