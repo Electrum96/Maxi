@@ -3,8 +3,6 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-
-
 import {
   faBars,
   faClose,
@@ -24,7 +22,7 @@ import {
   faCookie,
   faCakeCandles,
   faBowlFood,
-  faStroopwafel
+  faStroopwafel,
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -35,10 +33,10 @@ import InformationPlace from './src/places/information/InformationPlace';
 import EmptyBagPlace from './src/places/empty-bag/EmptyBagPlace';
 import BroningPlace from './src/places/broning/BroningPlace';
 import SportPlace from './src/places/sport/SportPlace';
-import MainPlace from './src/places/main/MainPlace'
+import MainPlace from './src/places/main/MainPlace';
 import HeartPlace from './src/places/heart/HeartPlace';
 import EventPlace from './src/places/event/EventPlace';
-
+import EventDetails from './src/places/eventDetails/EventDetails';
 
 library.add(
   faBars,
@@ -59,7 +57,7 @@ library.add(
   faCookie,
   faCakeCandles,
   faBowlFood,
-  faStroopwafel
+  faStroopwafel,
 );
 
 const Stack = createNativeStackNavigator();
@@ -118,9 +116,15 @@ function App() {
           component={SportPlace}
           options={{headerShown: false}}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="Event"
           component={EventPlace}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="EventDetails"
+          component={EventDetails}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

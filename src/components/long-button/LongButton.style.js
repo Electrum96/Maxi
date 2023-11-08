@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
         marginVertical: 20
     },
     title: {
-        textAlign: 'center'
+        textAlign: 'center',
+        color: COLORS.dark
     }
     
 });
