@@ -36,7 +36,14 @@ const EventPlace = ({navigation}) => {
             </TouchableOpacity>
           ))}
         </View>
-        <LongButton title={'Следующая'} />
+        <LongButton
+          title={'Следующая'}
+          onPress={() =>
+            navigation.push('EventDetails', {
+              id: 1,
+            })
+          }
+        />
       </View>
     </Layout>
   );

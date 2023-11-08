@@ -27,7 +27,8 @@ const EventDetails = ({route, navigation}) => {
     <Layout
       navigation={navigation}
       headerData={headerData}
-      background={COLORS.accentBg}>
+      background={COLORS.accentBg}
+      >
       <View style={styles.page}>
         <Image style={styles.image} source={eventData.image} />
         <View style={styles.informWrap}>
