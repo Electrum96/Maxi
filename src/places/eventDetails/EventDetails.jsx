@@ -14,6 +14,15 @@ const EventDetails = ({route, navigation}) => {
     headerItem => headerItem.classHeader === 'event',
   );
   const eventData = events.find(event => event.id === id);
+  const handlerGo = () => {
+    if (events.length > id) {
+      navigation.push('EventDetails', {
+        id: id + 1,
+      });
+    } else {
+      navigation.push('Main');
+    }
+  };
   return (
     <Layout
       navigation={navigation}
@@ -25,7 +34,7 @@ const EventDetails = ({route, navigation}) => {
           <Text style={styles.title}>{eventData.title}</Text>
           <Text style={styles.desc}>{eventData.desc}</Text>
         </View>
-        <LongButton title={'Следующая'} />
+        <LongButton title={events.length > id ? 'Следующая' : "Главная"} onPress={handlerGo} />
       </View>
     </Layout>
   );
