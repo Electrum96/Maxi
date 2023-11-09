@@ -15,7 +15,7 @@ const EventPlace = ({navigation}) => {
   );
 
   const goDitails = (event) => {
-    if (event.type === 'decor-one') {
+    if (event.type ) {
       navigation.push('DecorPlace', {id: event.id})
     } else {
       navigation.push('EventDetails', {id: event.id})

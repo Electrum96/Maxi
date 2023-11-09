@@ -12,9 +12,7 @@ const LayoutDecor = ({children, navigation, headerData, imageBackground}) => {
           <Header navigation={navigation} {...headerData} />
         </Container>
 
-        <View style={styles.content}>
-          <Container>{children}</Container>
-        </View>
+        <View style={styles.content}>{children}</View>
       </ImageBackground>
     </View>
   );
