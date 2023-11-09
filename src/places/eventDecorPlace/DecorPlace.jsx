@@ -3,18 +3,22 @@ import {Text, View, Image} from 'react-native';
 import styles from './DecorPlace.style';
 
 import LayoutDecor from '../../components/layoutDecor/LayoutDecor';
+import DecorItemOne from '../../components/decorItemOne/DecorItemOne';
 import headers from '../../data/headers';
-const DecorPlace = ({navigation}) => {
+import events from '../../data/events';
+const DecorPlace = ({navigation, route}) => {
+  const {id} = route.params;
   const headerData = headers.find(
     headerItem => headerItem.classHeader === 'event',
   );
+  const eventData = events.find(event => event.id === id);
 
   return (
     <LayoutDecor
       headerData={headerData}
       navigation={navigation}
       imageBackground={require('../../images/background/woman.png')}>
-      <Text style={{color: 'red'}}>DecorPlace</Text>
+      <DecorItemOne eventData={eventData}/>
     </LayoutDecor>
   );
 };
