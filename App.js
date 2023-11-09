@@ -37,6 +37,7 @@ import MainPlace from './src/places/main/MainPlace';
 import HeartPlace from './src/places/heart/HeartPlace';
 import EventPlace from './src/places/event/EventPlace';
 import EventDetails from './src/places/eventDetails/EventDetails';
+import DecorPlace from './src/places/eventDecorPlace/DecorPlace';
 
 library.add(
   faBars,
@@ -125,6 +126,11 @@ function App() {
         <Stack.Screen
           name="EventDetails"
           component={EventDetails}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="DecorPlace"
+          component={DecorPlace}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -16,9 +16,11 @@ const EventDetails = ({route, navigation}) => {
   const eventData = events.find(event => event.id === id);
   const handlerGo = () => {
     if (events.length > id) {
-      navigation.push('EventDetails', {
-        id: id + 1,
-      });
+      if (true) {
+        navigation.push('EventDetails', {
+          id: id + 1,
+        });
+      }
     } else {
       navigation.push('Main');
     }
@@ -27,15 +29,17 @@ const EventDetails = ({route, navigation}) => {
     <Layout
       navigation={navigation}
       headerData={headerData}
-      background={COLORS.accentBg}
-      >
+      background={COLORS.accentBg}>
       <View style={styles.page}>
         <Image style={styles.image} source={eventData.image} />
         <View style={styles.informWrap}>
           <Text style={styles.title}>{eventData.title}</Text>
           <Text style={styles.desc}>{eventData.desc}</Text>
         </View>
-        <LongButton title={events.length > id ? 'Следующая' : "Главная"} onPress={handlerGo} />
+        <LongButton
+          title={events.length > id ? 'Следующая' : 'Главная'}
+          onPress={handlerGo}
+        />
       </View>
     </Layout>
   );

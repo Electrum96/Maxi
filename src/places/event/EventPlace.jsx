@@ -14,6 +14,13 @@ const EventPlace = ({navigation}) => {
     headerItem => headerItem.classHeader === 'event',
   );
 
+  const goDitails = (event) => {
+    if (event.type === 'decor-one') {
+      navigation.push('DecorPlace', {id: event.id})
+    } else {
+      navigation.push('EventDetails', {id: event.id})
+    }
+  }
   return (
     <Layout
       navigation={navigation}
@@ -30,7 +37,7 @@ const EventPlace = ({navigation}) => {
             <TouchableOpacity
               style={styles.item}
               key={event.id}
-              onPress={() => navigation.push('EventDetails', {id: event.id})}>
+              onPress={() => goDitails(event)}>
               <Text style={styles.title}>{event.title}</Text>
               <Text style={styles.time}> {event.time}</Text>
             </TouchableOpacity>
