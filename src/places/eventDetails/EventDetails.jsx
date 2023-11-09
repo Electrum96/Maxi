@@ -16,7 +16,11 @@ const EventDetails = ({route, navigation}) => {
   const eventData = events.find(event => event.id === id);
   const handlerGo = () => {
     if (events.length > id) {
-      if (true) {
+      if (eventData) {
+        navigation.push('DecorPlace', {
+          id: id + 1,
+        });
+      } else {
         navigation.push('EventDetails', {
           id: id + 1,
         });
